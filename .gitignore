@@ -3,5 +3,6 @@ __pycache__/
 .venv/
 venv/
 reports/
+reports_*/
 .DS_Store
 scan_run.log

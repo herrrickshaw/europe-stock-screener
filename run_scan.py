@@ -33,7 +33,8 @@ UNIVERSE_CSV = DATA_DIR / 'europe_all_list.csv'
 def load_universe(exchange: str | None, limit: int | None) -> pd.DataFrame:
     df = pd.read_csv(UNIVERSE_CSV)
     if exchange:
-        df = df[df['exchange'] == exchange]
+        names = [e.strip() for e in exchange.split(',')]
+        df = df[df['exchange'].isin(names)]
     if limit:
         df = df.head(limit)
     return df.reset_index(drop=True)
@@ -41,7 +42,7 @@ def load_universe(exchange: str | None, limit: int | None) -> pd.DataFrame:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--exchange', default=None, help='Filter to one exchange (see data/europe_all_list.csv for names)')
+    ap.add_argument('--exchange', default=None, help='Filter to one or more exchanges, comma-separated (see data/europe_all_list.csv for names)')
     ap.add_argument('--limit', type=int, default=None, help='Cap universe size (for smoke tests)')
     ap.add_argument('--with-fundamentals', action='store_true',
                      help='Also fetch PE/ROE/D-E/etc via per-ticker yfinance .info (slow: ~1-3h for full universe)')
