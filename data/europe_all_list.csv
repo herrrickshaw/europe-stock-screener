@@ -303,46 +303,46 @@ SHELL.AS,Shell plc,AEX25,Euronext Amsterdam
 UMG.AS,Universal Music Group,AEX25,Euronext Amsterdam
 UNA.AS,Unilever,AEX25,Euronext Amsterdam
 WKL.AS,Wolters Kluwer,AEX25,Euronext Amsterdam
-Euronext Amsterdam: APAM.BR,Aperam,BEL20,Euronext Brussels
-Euronext Brussels: ABI.BR,AB InBev,BEL20,Euronext Brussels
-Euronext Brussels: ACKB.BR,Ackermans & van Haaren,BEL20,Euronext Brussels
-Euronext Brussels: AED.BR,Aedifica,BEL20,Euronext Brussels
-Euronext Brussels: AGS.BR,Ageas,BEL20,Euronext Brussels
-Euronext Brussels: ARGX.BR,arGEN-X [nl],BEL20,Euronext Brussels
-Euronext Brussels: AZE.BR,Azelis Group,BEL20,Euronext Brussels
-Euronext Brussels: DIE.BR,D'Ieteren,BEL20,Euronext Brussels
-Euronext Brussels: ELI.BR,Elia Group,BEL20,Euronext Brussels
-Euronext Brussels: GBLB.BR,GBL,BEL20,Euronext Brussels
-Euronext Brussels: KBC.BR,KBC,BEL20,Euronext Brussels
-Euronext Brussels: LOTB.BR,Lotus Bakeries,BEL20,Euronext Brussels
-Euronext Brussels: MELE.BR,Melexis [nl],BEL20,Euronext Brussels
-Euronext Brussels: MONT.BR,Montea,BEL20,Euronext Brussels
-Euronext Brussels: SOF.BR,Sofina,BEL20,Euronext Brussels
-Euronext Brussels: SOLB.BR,Solvay,BEL20,Euronext Brussels
-Euronext Brussels: SYENS.BR,Syensqo,BEL20,Euronext Brussels
-Euronext Brussels: UCB.BR,UCB,BEL20,Euronext Brussels
-Euronext Brussels: UMI.BR,Umicore,BEL20,Euronext Brussels
-Euronext Brussels: WDP.BR,WDP [nl],BEL20,Euronext Brussels
-Euronext Dublin: A5G.IR,AIB Group,ISEQ20,Euronext Dublin
-Euronext Dublin: BIRG.IR,Bank of Ireland,ISEQ20,Euronext Dublin
-Euronext Dublin: C5H.IR,Cairn Homes,ISEQ20,Euronext Dublin
-Euronext Dublin: DQ7A.IR,Donegal investment group,ISEQ20,Euronext Dublin
-Euronext Dublin: EG7.IR,FBD Holdings,ISEQ20,Euronext Dublin
-Euronext Dublin: GL9.IR,Glanbia,ISEQ20,Euronext Dublin
-Euronext Dublin: GRP.IR,Greencoat Renewables,ISEQ20,Euronext Dublin
-Euronext Dublin: GVR.IR,Glenveagh Properties,ISEQ20,Euronext Dublin
-Euronext Dublin: HMSO.IR,Hammerson plc,ISEQ20,Euronext Dublin
-Euronext Dublin: IR5B.IR,Irish Continental Group,ISEQ20,Euronext Dublin
-Euronext Dublin: IRES.IR,Irish Residential Properties REIT,ISEQ20,Euronext Dublin
-Euronext Dublin: KMR.IR,Kenmare Resources,ISEQ20,Euronext Dublin
-Euronext Dublin: KRX.IR,Kingspan Group,ISEQ20,Euronext Dublin
-Euronext Dublin: KRZ.IR,Kerry Group,ISEQ20,Euronext Dublin
-Euronext Dublin: MIO.IR,Mincon group,ISEQ20,Euronext Dublin
-Euronext Dublin: MLC.IR,Malin Corp.,ISEQ20,Euronext Dublin
-Euronext Dublin: OIZ.IR,Origin Enterprises,ISEQ20,Euronext Dublin
-Euronext Dublin: PTSB.IR,Permanent TSB,ISEQ20,Euronext Dublin
-Euronext Dublin: RY4C.IR,Ryanair Holdings,ISEQ20,Euronext Dublin
-Euronext Dublin: UPR.IR,Uniphar,ISEQ20,Euronext Dublin
+APAM.BR,Aperam,BEL20,Euronext Brussels
+ABI.BR,AB InBev,BEL20,Euronext Brussels
+ACKB.BR,Ackermans & van Haaren,BEL20,Euronext Brussels
+AED.BR,Aedifica,BEL20,Euronext Brussels
+AGS.BR,Ageas,BEL20,Euronext Brussels
+ARGX.BR,arGEN-X [nl],BEL20,Euronext Brussels
+AZE.BR,Azelis Group,BEL20,Euronext Brussels
+DIE.BR,D'Ieteren,BEL20,Euronext Brussels
+ELI.BR,Elia Group,BEL20,Euronext Brussels
+GBLB.BR,GBL,BEL20,Euronext Brussels
+KBC.BR,KBC,BEL20,Euronext Brussels
+LOTB.BR,Lotus Bakeries,BEL20,Euronext Brussels
+MELE.BR,Melexis [nl],BEL20,Euronext Brussels
+MONT.BR,Montea,BEL20,Euronext Brussels
+SOF.BR,Sofina,BEL20,Euronext Brussels
+SOLB.BR,Solvay,BEL20,Euronext Brussels
+SYENS.BR,Syensqo,BEL20,Euronext Brussels
+UCB.BR,UCB,BEL20,Euronext Brussels
+UMI.BR,Umicore,BEL20,Euronext Brussels
+WDP.BR,WDP [nl],BEL20,Euronext Brussels
+A5G.IR,AIB Group,ISEQ20,Euronext Dublin
+BIRG.IR,Bank of Ireland,ISEQ20,Euronext Dublin
+C5H.IR,Cairn Homes,ISEQ20,Euronext Dublin
+DQ7A.IR,Donegal investment group,ISEQ20,Euronext Dublin
+EG7.IR,FBD Holdings,ISEQ20,Euronext Dublin
+GL9.IR,Glanbia,ISEQ20,Euronext Dublin
+GRP.IR,Greencoat Renewables,ISEQ20,Euronext Dublin
+GVR.IR,Glenveagh Properties,ISEQ20,Euronext Dublin
+HMSO.IR,Hammerson plc,ISEQ20,Euronext Dublin
+IR5B.IR,Irish Continental Group,ISEQ20,Euronext Dublin
+IRES.IR,Irish Residential Properties REIT,ISEQ20,Euronext Dublin
+KMR.IR,Kenmare Resources,ISEQ20,Euronext Dublin
+KRX.IR,Kingspan Group,ISEQ20,Euronext Dublin
+KRZ.IR,Kerry Group,ISEQ20,Euronext Dublin
+MIO.IR,Mincon group,ISEQ20,Euronext Dublin
+MLC.IR,Malin Corp.,ISEQ20,Euronext Dublin
+OIZ.IR,Origin Enterprises,ISEQ20,Euronext Dublin
+PTSB.IR,Permanent TSB,ISEQ20,Euronext Dublin
+RY4C.IR,Ryanair Holdings,ISEQ20,Euronext Dublin
+UPR.IR,Uniphar,ISEQ20,Euronext Dublin
 ALTR.LS,Altri,PSI20,Euronext Lisbon
 BCP.LS,Banco Comercial Português,PSI20,Euronext Lisbon
 COR.LS,Corticeira Amorim,PSI20,Euronext Lisbon
@@ -967,31 +967,31 @@ UTR1L.VS,Utenos trikotazas,Baltic Secondary,Nasdaq Vilnius
 VBL1L.VS,Vilniaus baldai,Baltic Secondary,Nasdaq Vilnius
 VLP1L.VS,Vilkyskiu pienine,Baltic Main,Nasdaq Vilnius
 ZMP1L.VS,Zemaitijos pienas,Baltic Secondary,Nasdaq Vilnius
-OSE: AKRBP.OL,Aker BP,OBX25,Oslo Bors
-OSE: BWLPG.OL,BW LPG,OBX25,Oslo Bors
-OSE: DNB.OL,DNB Bank,OBX25,Oslo Bors
-OSE: EQNR.OL,Equinor,OBX25,Oslo Bors
-OSE: FRO.OL,Frontline,OBX25,Oslo Bors
-OSE: GJF.OL,Gjensidige Forsikring,OBX25,Oslo Bors
-OSE: GOGL.OL,Golden Ocean Group,OBX25,Oslo Bors
-OSE: HAFNI.OL,Hafnia Limited,OBX25,Oslo Bors
-OSE: HAUTO.OL,Höegh Autoliners ASA,OBX25,Oslo Bors
-OSE: KOG.OL,Kongsberg Gruppen,OBX25,Oslo Bors
-OSE: MOWI.OL,Mowi,OBX25,Oslo Bors
-OSE: MPCC.OL,MPC Container Ships,OBX25,Oslo Bors
-OSE: NAS.OL,Norwegian Air Shuttle,OBX25,Oslo Bors
-OSE: NHY.OL,Norsk Hydro,OBX25,Oslo Bors
-OSE: NOD.OL,Nordic Semiconductor,OBX25,Oslo Bors
-OSE: ORK.OL,Orkla,OBX25,Oslo Bors
-OSE: SALM.OL,SalMar,OBX25,Oslo Bors
-OSE: STB.OL,Storebrand,OBX25,Oslo Bors
-OSE: SUBC.OL,Subsea 7,OBX25,Oslo Bors
-OSE: TEL.OL,Telenor,OBX25,Oslo Bors
-OSE: TGS.OL,TGS ASA,OBX25,Oslo Bors
-OSE: TOM.OL,Tomra Systems,OBX25,Oslo Bors
-OSE: VAR.OL,Vår Energi ASA,OBX25,Oslo Bors
-OSE: WAWI.OL,Wallenius Wilhelmsen,OBX25,Oslo Bors
-OSE: YAR.OL,Yara International,OBX25,Oslo Bors
+AKRBP.OL,Aker BP,OBX25,Oslo Bors
+BWLPG.OL,BW LPG,OBX25,Oslo Bors
+DNB.OL,DNB Bank,OBX25,Oslo Bors
+EQNR.OL,Equinor,OBX25,Oslo Bors
+FRO.OL,Frontline,OBX25,Oslo Bors
+GJF.OL,Gjensidige Forsikring,OBX25,Oslo Bors
+GOGL.OL,Golden Ocean Group,OBX25,Oslo Bors
+HAFNI.OL,Hafnia Limited,OBX25,Oslo Bors
+HAUTO.OL,Höegh Autoliners ASA,OBX25,Oslo Bors
+KOG.OL,Kongsberg Gruppen,OBX25,Oslo Bors
+MOWI.OL,Mowi,OBX25,Oslo Bors
+MPCC.OL,MPC Container Ships,OBX25,Oslo Bors
+NAS.OL,Norwegian Air Shuttle,OBX25,Oslo Bors
+NHY.OL,Norsk Hydro,OBX25,Oslo Bors
+NOD.OL,Nordic Semiconductor,OBX25,Oslo Bors
+ORK.OL,Orkla,OBX25,Oslo Bors
+SALM.OL,SalMar,OBX25,Oslo Bors
+STB.OL,Storebrand,OBX25,Oslo Bors
+SUBC.OL,Subsea 7,OBX25,Oslo Bors
+TEL.OL,Telenor,OBX25,Oslo Bors
+TGS.OL,TGS ASA,OBX25,Oslo Bors
+TOM.OL,Tomra Systems,OBX25,Oslo Bors
+VAR.OL,Vår Energi ASA,OBX25,Oslo Bors
+WAWI.OL,Wallenius Wilhelmsen,OBX25,Oslo Bors
+YAR.OL,Yara International,OBX25,Oslo Bors
 CEZ.PR,CEZ a.s.,PX,Prague Stock Exchange
 COLT.PR,Colt CZ Group SE,PX,Prague Stock Exchange
 CSG.PR,CSG N.V.,PX,Prague Stock Exchange
