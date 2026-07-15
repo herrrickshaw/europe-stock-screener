@@ -1,7 +1,7 @@
 # Europe Stock Screener
 
 Darvas/Buffett + Piotroski-simplified momentum-and-quality screener, scoped to the
-full European equity universe: **966 stocks across 17 exchanges**.
+full European equity universe: **1,063 stocks across 23 exchanges**.
 
 Extracted and adapted from a larger multi-market research platform's Phase-1
 (OHLCV+RSI, no fundamentals required) scanner, so it runs standalone with only
@@ -24,12 +24,28 @@ Research/education only. Not investment advice.
 | Nasdaq Copenhagen | 25 | `.CO` |
 | Athens Stock Exchange | 25 | `.AT` |
 | Euronext Amsterdam | 25 | `.AS` |
+| Nasdaq Vilnius | 22 | `.VS` |
 | Euronext Dublin | 20 | `.IR` |
 | Euronext Brussels | 20 | `.BR` |
+| Nasdaq Tallinn | 20 | `.TL` |
+| Bucharest Stock Exchange (BET) | 20 | `.RO` |
 | SIX Swiss | 20 | `.SW` |
 | Vienna (ATX) | 20 | `.VI` |
 | Warsaw GPW | 20 | `.WA` |
 | Euronext Lisbon | 18 | `.LS` |
+| Budapest Stock Exchange (BUX) | 17 | `.BD` |
+| Prague Stock Exchange (PX) | 10 | `.PR` |
+| Nasdaq Riga | 8 | `.RG` |
+
+The 6 newest exchanges (Vilnius/Tallinn/Riga/Prague/Budapest/Bucharest) were added
+because the parent platform's `_market_from_ticker()` already recognized these
+suffixes as European, but no instrument list had been built for them yet. Sourced
+from each exchange's official index page + Nasdaq Baltic's share list (Main +
+Secondary tiers; First North/growth-board names excluded for liquidity quality),
+all 97 tickers validated against yfinance before being added. Prague and Budapest
+lists are slightly incomplete (10/12 and 17/17 respectively — Prague's TradingView
+source paywalled 2 of the smallest constituents) — see `data/europe_all_list.csv`
+for the exact roster.
 
 ## Scoring
 

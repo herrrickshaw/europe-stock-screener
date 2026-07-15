@@ -99,6 +99,43 @@ TIT.MI,Telecom Italia,FTSEMIB,Borsa Italiana
 TRN.MI,Terna,FTSEMIB,Borsa Italiana
 UCG.MI,UniCredit,FTSEMIB,Borsa Italiana
 UNI.MI,Unipol,FTSEMIB,Borsa Italiana
+AQ.RO,Aquila Part Prod Com SA,BET,Bucharest Stock Exchange
+ATB.RO,Antibiotice SA,BET,Bucharest Stock Exchange
+BRD.RO,BRD - Groupe Societe Generale SA,BET,Bucharest Stock Exchange
+CFH.RO,Cris-Tim SA,BET,Bucharest Stock Exchange
+DIGI.RO,Digi Communications NV,BET,Bucharest Stock Exchange
+EL.RO,Societatea Energetica Electrica S.A.,BET,Bucharest Stock Exchange
+FP.RO,Fondul Proprietatea SA,BET,Bucharest Stock Exchange
+H2O.RO,S.P.E.E.H. Hidroelectrica S.A.,BET,Bucharest Stock Exchange
+M.RO,MedLife SA,BET,Bucharest Stock Exchange
+ONE.RO,One United Properties SA,BET,Bucharest Stock Exchange
+PE.RO,Premier Energy SA,BET,Bucharest Stock Exchange
+SFG.RO,Sphera Franchise Group SA,BET,Bucharest Stock Exchange
+SNG.RO,Romgaz SA,BET,Bucharest Stock Exchange
+SNN.RO,S.N. Nuclearelectrica S.A.,BET,Bucharest Stock Exchange
+SNP.RO,OMV Petrom SA,BET,Bucharest Stock Exchange
+TEL.RO,C.N.T.E.E. Transelectrica SA,BET,Bucharest Stock Exchange
+TGN.RO,S.N.T.G.N. Transgaz SA,BET,Bucharest Stock Exchange
+TLV.RO,Banca Transilvania SA,BET,Bucharest Stock Exchange
+TRP.RO,Teraplast SA,BET,Bucharest Stock Exchange
+TTS.RO,Transport Trade Services SA,BET,Bucharest Stock Exchange
+4IG.BD,4iG Nyrt.,BUX,Budapest Stock Exchange
+ALTEO.BD,ALTEO Nyrt.,BUX,Budapest Stock Exchange
+ANY.BD,ANY Security Printing Co. Plc,BUX,Budapest Stock Exchange
+APPENINN.BD,Appeninn Asset Management Nyrt.,BUX,Budapest Stock Exchange
+AUTOWALLIS.BD,AutoWallis Plc,BUX,Budapest Stock Exchange
+BIF.BD,Budapesti Ingatlan Hasznositasi es Fejlesztesi Nyrt,BUX,Budapest Stock Exchange
+CIGPANNONIA.BD,CIG Pannonia Life Insurance Plc,BUX,Budapest Stock Exchange
+DELTA.BD,Delta Technologies Nyrt.,BUX,Budapest Stock Exchange
+GSPARK.BD,Graphisoft Park SE,BUX,Budapest Stock Exchange
+MASTERPLAST.BD,Masterplast Nyrt.,BUX,Budapest Stock Exchange
+MOL.BD,MOL Hungarian Oil and Gas Plc,BUX,Budapest Stock Exchange
+MTELEKOM.BD,Magyar Telekom Telecommunications PLC,BUX,Budapest Stock Exchange
+OPUS.BD,OPUS GLOBAL Nyrt.,BUX,Budapest Stock Exchange
+OTP.BD,OTP Bank Nyrt,BUX,Budapest Stock Exchange
+PANNERGY.BD,PannErgy Nyrt.,BUX,Budapest Stock Exchange
+RICHTER.BD,Gedeon Richter Plc,BUX,Budapest Stock Exchange
+WABERERS.BD,Waberer's International Nyrt.,BUX,Budapest Stock Exchange
 1SXP.F,Schott Pharma AG & CO KGaA,SDAX70,Deutsche Boerse Frankfurt
 1U1.F,1&1 AG,SDAX70,Deutsche Boerse Frankfurt
 8OT.F,Douglas Elliman Inc.,SDAX70,Deutsche Boerse Frankfurt
@@ -850,6 +887,14 @@ TYRES.HE,Nokian Tyres,OMXH25,Nasdaq Helsinki
 UPM.HE,UPM-Kymmene,OMXH25,Nasdaq Helsinki
 VALMT.HE,Valmet,OMXH25,Nasdaq Helsinki
 WRT1V.HE,Wärtsilä,OMXH25,Nasdaq Helsinki
+BAL1R.RG,Amber Latvijas balzams,Baltic Secondary,Nasdaq Riga
+DGR1R.RG,DelfinGroup,Baltic Main,Nasdaq Riga
+ELEVR.RG,Eleving Group,Baltic Main,Nasdaq Riga
+IDX1R.RG,INDEXO,Baltic Main,Nasdaq Riga
+IGR1R.RG,LAU Infra Grupa,Baltic Main,Nasdaq Riga
+RKB1R.RG,Rigas kugu buvetava,Baltic Secondary,Nasdaq Riga
+SAF1R.RG,SAF Tehnika,Baltic Main,Nasdaq Riga
+SCM1R.RG,Siguldas ciltslietu,Baltic Secondary,Nasdaq Riga
 ABB.ST,ABB Ltd,OMXS30,Nasdaq Stockholm
 ADDT-B.ST,Addtech B,OMXS30,Nasdaq Stockholm
 ALFA.ST,Alfa Laval,OMXS30,Nasdaq Stockholm
@@ -880,6 +925,48 @@ SWED-A.ST,Swedbank A,OMXS30,Nasdaq Stockholm
 TEL2-B.ST,Tele2 B,OMXS30,Nasdaq Stockholm
 TELIA.ST,Telia Company,OMXS30,Nasdaq Stockholm
 VOLV-B.ST,Volvo B,OMXS30,Nasdaq Stockholm
+ARC1T.TL,Arco Vara,Baltic Main,Nasdaq Tallinn
+CPA1T.TL,Coop Pank,Baltic Main,Nasdaq Tallinn
+EEG1T.TL,Ekspress Grupp,Baltic Main,Nasdaq Tallinn
+EFT1T.TL,EfTEN Real Estate Fund,Baltic Main,Nasdaq Tallinn
+HAE1T.TL,Harju Elekter Group,Baltic Main,Nasdaq Tallinn
+HPR1T.TL,Hepsor,Baltic Main,Nasdaq Tallinn
+INF1T.TL,Infortar,Baltic Main,Nasdaq Tallinn
+LHV1T.TL,LHV Group,Baltic Main,Nasdaq Tallinn
+LVN1T.TL,Liven,Baltic Main,Nasdaq Tallinn
+MRK1T.TL,Merko Ehitus,Baltic Main,Nasdaq Tallinn
+NCN1T.TL,Nordecon,Baltic Main,Nasdaq Tallinn
+PKG1T.TL,Pro Kapital Grupp,Baltic Main,Nasdaq Tallinn
+PRF1T.TL,PRFoods,Baltic Secondary,Nasdaq Tallinn
+SFG1T.TL,Silvano Fashion Group,Baltic Main,Nasdaq Tallinn
+SKN1T.TL,Nordic Fibreboard,Baltic Secondary,Nasdaq Tallinn
+TAL1T.TL,Tallink Grupp,Baltic Main,Nasdaq Tallinn
+TKM1T.TL,TKM Grupp,Baltic Main,Nasdaq Tallinn
+TPD1T.TL,Trigon Property Development,Baltic Secondary,Nasdaq Tallinn
+TSM1T.TL,Tallinna Sadam,Baltic Main,Nasdaq Tallinn
+TVE1T.TL,Tallinna Vesi,Baltic Main,Nasdaq Tallinn
+AKO1L.VS,Akola Group,Baltic Main,Nasdaq Vilnius
+AMG1L.VS,Amber Grid,Baltic Secondary,Nasdaq Vilnius
+APG1L.VS,Apranga,Baltic Main,Nasdaq Vilnius
+AUG1L.VS,AUGA group,Baltic Secondary,Nasdaq Vilnius
+GRG1L.VS,Grigeo Group,Baltic Main,Nasdaq Vilnius
+IGN1L.VS,Ignitis grupe,Baltic Main,Nasdaq Vilnius
+INC1L.VS,INVL Technology,Baltic Secondary,Nasdaq Vilnius
+INL1L.VS,INVL Baltic Farmland,Baltic Secondary,Nasdaq Vilnius
+INR1L.VS,INVL Baltic Real Estate,Baltic Secondary,Nasdaq Vilnius
+IVL1L.VS,Invalda INVL,Baltic Secondary,Nasdaq Vilnius
+KNE1L.VS,KN Energies,Baltic Main,Nasdaq Vilnius
+KNR1L.VS,Kauno energija,Baltic Secondary,Nasdaq Vilnius
+LGD1L.VS,LITGRID,Baltic Secondary,Nasdaq Vilnius
+NTU1L.VS,Novaturas,Baltic Main,Nasdaq Vilnius
+PZV1L.VS,Pieno zvaigzdes,Baltic Main,Nasdaq Vilnius
+ROE1L.VS,Artea Bankas,Baltic Main,Nasdaq Vilnius
+RSU1L.VS,Rokiskio suris,Baltic Main,Nasdaq Vilnius
+TEL1L.VS,Telia Lietuva,Baltic Main,Nasdaq Vilnius
+UTR1L.VS,Utenos trikotazas,Baltic Secondary,Nasdaq Vilnius
+VBL1L.VS,Vilniaus baldai,Baltic Secondary,Nasdaq Vilnius
+VLP1L.VS,Vilkyskiu pienine,Baltic Main,Nasdaq Vilnius
+ZMP1L.VS,Zemaitijos pienas,Baltic Secondary,Nasdaq Vilnius
 OSE: AKRBP.OL,Aker BP,OBX25,Oslo Bors
 OSE: BWLPG.OL,BW LPG,OBX25,Oslo Bors
 OSE: DNB.OL,DNB Bank,OBX25,Oslo Bors
@@ -905,6 +992,16 @@ OSE: TOM.OL,Tomra Systems,OBX25,Oslo Bors
 OSE: VAR.OL,Vår Energi ASA,OBX25,Oslo Bors
 OSE: WAWI.OL,Wallenius Wilhelmsen,OBX25,Oslo Bors
 OSE: YAR.OL,Yara International,OBX25,Oslo Bors
+CEZ.PR,CEZ a.s.,PX,Prague Stock Exchange
+COLT.PR,Colt CZ Group SE,PX,Prague Stock Exchange
+CSG.PR,CSG N.V.,PX,Prague Stock Exchange
+DSPW.PR,Doosan Skoda Power AS,PX,Prague Stock Exchange
+ERBAG.PR,Erste Group Bank AG,PX,Prague Stock Exchange
+KOFOL.PR,Kofola CeskoSlovensko as,PX,Prague Stock Exchange
+KOMB.PR,Komercni banka a.s.,PX,Prague Stock Exchange
+MONET.PR,MONETA Money Bank AS,PX,Prague Stock Exchange
+TABAK.PR,Philip Morris CR as,PX,Prague Stock Exchange
+VIG.PR,Vienna Insurance Group AG,PX,Prague Stock Exchange
 ABBN.SW,ABB Ltd,SMI20,SIX Swiss
 ALC.SW,Alcon Inc,SMI20,SIX Swiss
 AMRZ.SW,Amrize AG,SMI20,SIX Swiss
