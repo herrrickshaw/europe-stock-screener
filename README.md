@@ -1,5 +1,7 @@
 # Europe Stock Screener
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/herrrickshaw/europe-stock-screener/blob/main/notebooks/colab_test.ipynb)
+
 Darvas/Buffett + Piotroski-simplified momentum-and-quality screener, scoped to the
 full European equity universe: **1,063 stocks across 23 exchanges**.
 
