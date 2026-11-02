@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 
 from capture import build_rows
+
 from screener.scanner import scan_darvas, scan_piotroski
 
 GOLDEN = Path(__file__).parent / 'golden' / 'scan_outputs.json'

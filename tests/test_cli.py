@@ -2,9 +2,10 @@
 import hashlib
 import sys
 
+from synthetic import make_download_any
+
 import run_scan
 from screener import fetch
-from synthetic import make_download_any
 
 
 def _run(monkeypatch, tmp_path, capsys, *argv):

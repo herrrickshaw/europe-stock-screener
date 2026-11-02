@@ -83,7 +83,8 @@ def print_summary(darvas: pd.DataFrame, piotroski: pd.DataFrame) -> None:
 def build_parser() -> argparse.ArgumentParser:
     """CLI argument parser."""
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--exchange', default=None, help='Filter to one or more exchanges, comma-separated (see data/europe_all_list.csv for names)')
+    ap.add_argument('--exchange', default=None, help='Filter to one or more exchanges, comma-separated '
+                    '(see data/europe_all_list.csv for names)')
     ap.add_argument('--limit', type=int, default=None, help='Cap universe size (for smoke tests)')
     ap.add_argument('--with-fundamentals', action='store_true',
                     help='Also fetch PE/ROE/D-E/etc via per-ticker yfinance .info (slow: ~1-3h for full universe)')

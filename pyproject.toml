@@ -1,0 +1,18 @@
+[project]
+name = "europe-stock-screener"
+version = "0.1.0"
+description = "Darvas/Buffett + Piotroski-simplified screener for 23 European exchanges"
+requires-python = ">=3.9"
+dependencies = ["yfinance>=0.2.0", "pandas>=1.5.0", "numpy>=1.23.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I"]
+ignore = ["E701", "E702", "E241", "E221", "E272"]
