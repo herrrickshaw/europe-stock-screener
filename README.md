@@ -99,7 +99,6 @@ Tests use synthetic OHLCV and an injected downloader; yfinance is never called. 
 - yfinance rate-limits large batch downloads; if a run stalls repeatedly, lower `_BATCH_SIZE` in `screener/fetch.py`.
 - `--with-fundamentals` makes one `.info` call per ticker (~1/sec); budget the time.
 - No survivorship-bias handling: this is a live snapshot scan, not a backtest.
-- Prices are `auto_adjust=True` Yahoo data; recent splits can be mis-adjusted in some markets.
 
 ## Related repositories
 Extracted from a larger private multi-market research platform's Phase-1 (OHLCV + RSI) scanner.
