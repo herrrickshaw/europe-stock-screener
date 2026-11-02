@@ -11,17 +11,26 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+from typing import Optional, Sequence
 
 import pandas as pd
 
 FILES = ['darvas_buffett_scan.csv', 'piotroski_scan.csv']
 
 
-def main():
+def merge_frames(frames: list[pd.DataFrame]) -> pd.DataFrame:
+    """Concatenate scan frames, keep the first row per ticker, sort by score descending."""
+    merged = pd.concat(frames, ignore_index=True)
+    merged = merged.drop_duplicates(subset='ticker', keep='first')
+    return merged.sort_values('score', ascending=False).reset_index(drop=True)
+
+
+def main(argv: Optional[Sequence[str]] = None) -> None:
+    """CLI entry: merge each scan CSV across the given report directories."""
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('report_dirs', nargs='+', help='Report directories to merge, in order')
     ap.add_argument('--out', default='reports_combined')
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
 
     out_dir = Path(args.out)
     out_dir.mkdir(exist_ok=True)
@@ -36,12 +45,10 @@ def main():
                 print(f'  skip: {fp} not found')
         if not frames:
             continue
-        merged = pd.concat(frames, ignore_index=True)
-        before = len(merged)
-        merged = merged.drop_duplicates(subset='ticker', keep='first')
+        before = sum(len(f) for f in frames)
+        merged = merge_frames(frames)
         if before != len(merged):
             print(f'{fname}: dropped {before - len(merged)} duplicate ticker(s)')
-        merged = merged.sort_values('score', ascending=False).reset_index(drop=True)
         merged.to_csv(out_dir / fname, index=False)
         print(f'{fname}: {len(merged)} rows -> {out_dir / fname}')
 
