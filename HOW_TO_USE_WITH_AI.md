@@ -1,6 +1,6 @@
 # How to use europe-stock-screener with an AI assistant
 
-Darvas/Buffett + Piotroski stock screener scoped to the European equity universe (17 exchanges, 966 stocks). Research/education only.
+Darvas/Buffett + Piotroski stock screener scoped to the European equity universe (23 exchanges, 1,063 stocks). Research/education only.
 
 You don't need to be a programmer to use this repository. Get the code,
 hand it to an AI assistant (Claude, Gemini, ChatGPT, ...), and ask in plain
