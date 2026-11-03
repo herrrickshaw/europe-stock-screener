@@ -26,8 +26,9 @@ def test_cli_writes_reports_for_one_exchange(monkeypatch, tmp_path, capsys):
         assert len(lines) == 21
         assert lines[0].startswith('ticker,name,exchange,cmp')
     for name in ('darvas_buffett_scan.csv', 'piotroski_scan.csv'):
-        got = pd.read_csv(tmp_path / name)
-        want = pd.read_csv(GOLDEN / name)
+        # row order among equal scores is not specified (sort is not stable across platforms)
+        got = pd.read_csv(tmp_path / name).sort_values('ticker').reset_index(drop=True)
+        want = pd.read_csv(GOLDEN / name).sort_values('ticker').reset_index(drop=True)
         pd.testing.assert_frame_equal(got, want, check_exact=False, rtol=0, atol=0.011)
 
 
