@@ -3,7 +3,7 @@ Daily momentum scanner — vectorized, Phase-1 (OHLCV+RSI) data only.
 No fundamentals required; uses them when available (--with-fundamentals).
 
 Adapted from the multi-market screening platform's `scanners/daily_scanner.py`,
-scoped here to the European equity universe (17 exchanges, 966 stocks).
+scoped here to the European equity universe (23 exchanges, 1,063 stocks).
 
 Darvas / Buffett  (0-16 max with all data):
   D1  CMP within 15% of 52W high          -> +2   (Darvas box ceiling)
@@ -42,6 +42,10 @@ import math
 import numpy as np
 import pandas as pd
 
+# -- thresholds (see module docstring for the criteria they belong to) -------
+DARVAS_BUY, DARVAS_WATCH = 5, 3
+PIOTROSKI_BUY_FRAC, PIOTROSKI_WATCH_FRAC = 0.65, 0.40
+
 
 # -- helpers ------------------------------------------------------------------
 
@@ -75,8 +79,15 @@ def _b(v) -> bool | None:
         return None
     try:
         return bool(v)
-    except Exception:
+    except (TypeError, ValueError):
         return None
+
+
+def _volume_int(v) -> int | None:
+    """Volume as int, or None for missing/NaN."""
+    if v is None or (isinstance(v, float) and math.isnan(v)):
+        return None
+    return int(v)
 
 
 def _strs(df: pd.DataFrame, col: str, default: str = '') -> list:
@@ -89,6 +100,7 @@ def _strs(df: pd.DataFrame, col: str, default: str = '') -> list:
 # -- Darvas / Buffett ----------------------------------------------------------
 
 def scan_darvas(df: pd.DataFrame) -> list[dict]:
+    """Score rows of `df` (QuoteData columns, one per ticker) on Darvas/Buffett D1-D13; one dict per row."""
     if df.empty:
         return []
 
@@ -179,7 +191,7 @@ def scan_darvas(df: pd.DataFrame) -> list[dict]:
         + v_d11.astype(int) + v_d12.astype(int) + v_d13.astype(int)
     )
 
-    signal = np.where(score >= 5, 'BUY', np.where(score >= 3, 'WATCH', 'AVOID'))
+    signal = np.where(score >= DARVAS_BUY, 'BUY', np.where(score >= DARVAS_WATCH, 'WATCH', 'AVOID'))
 
     n_avail = (v_d1.astype(int) + v_d2.astype(int) + v_d3.astype(int) + v_d4.astype(int) +
                v_d5.astype(int) + v_d6.astype(int) + v_d7.astype(int) + v_d8.astype(int) +
@@ -217,7 +229,7 @@ def scan_darvas(df: pd.DataFrame) -> list[dict]:
             'opm':            _r(opm.iat[i]),
             'debt_to_equity': _r(de.iat[i]),
             'market_cap':     _r(mcap.iat[i]),
-            'volume':         int(vi) if vi is not None and not (isinstance(vi, float) and math.isnan(vi)) else None,
+            'volume':         _volume_int(vi),
             'beta':           _r(beta.iat[i]),
             'current_ratio':  _r(cr.iat[i]),
             'revenue_growth': _r(rg.iat[i]),
@@ -257,6 +269,7 @@ def scan_darvas(df: pd.DataFrame) -> list[dict]:
 # -- Piotroski (simplified) -----------------------------------------------------
 
 def scan_piotroski(df: pd.DataFrame) -> list[dict]:
+    """Score rows of `df` (QuoteData columns, one per ticker) on simplified Piotroski; one dict per row."""
     if df.empty:
         return []
 
@@ -339,8 +352,8 @@ def scan_piotroski(df: pd.DataFrame) -> list[dict]:
         v_fx5.astype(int) + v_fx6.astype(int) + v_fx7.astype(int)
     ).clip(lower=1)
 
-    buy_thresh   = (max_score * 0.65).apply(math.ceil)
-    watch_thresh = (max_score * 0.40).apply(math.ceil)
+    buy_thresh   = (max_score * PIOTROSKI_BUY_FRAC).apply(math.ceil)
+    watch_thresh = (max_score * PIOTROSKI_WATCH_FRAC).apply(math.ceil)
     signal = np.where(score >= buy_thresh, 'BUY',
              np.where(score >= watch_thresh, 'WATCH', 'AVOID'))
 
@@ -379,7 +392,7 @@ def scan_piotroski(df: pd.DataFrame) -> list[dict]:
             'revenue_growth': _r(rg.iat[i]),
             'pb':             _r(pb.iat[i]),
             'market_cap':     _r(mcap.iat[i]),
-            'volume':         int(vi) if vi is not None and not (isinstance(vi, float) and math.isnan(vi)) else None,
+            'volume':         _volume_int(vi),
             'beta':           _r(beta.iat[i]),
             'eps':            _r(eps.iat[i]),
             'dividend_yield': _r(dy.iat[i]),
