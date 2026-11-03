@@ -1,7 +1,9 @@
-"""End-to-end: run_scan.main on a fake downloader; CSV outputs are pinned."""
-import hashlib
+"""End-to-end: run_scan.main on a fake downloader; CSV outputs are pinned to golden files
+(numeric columns compared to the CSV rounding step, as float last digits differ across CPUs)."""
 import sys
+from pathlib import Path
 
+import pandas as pd
 from synthetic import make_download_any
 
 import run_scan
@@ -23,9 +25,10 @@ def test_cli_writes_reports_for_one_exchange(monkeypatch, tmp_path, capsys):
         lines = (tmp_path / name).read_text().splitlines()
         assert len(lines) == 21
         assert lines[0].startswith('ticker,name,exchange,cmp')
-    digests = {n: hashlib.sha256((tmp_path / n).read_bytes()).hexdigest()[:16]
-               for n in ('darvas_buffett_scan.csv', 'piotroski_scan.csv')}
-    assert digests == EXPECTED_DIGESTS
+    for name in ('darvas_buffett_scan.csv', 'piotroski_scan.csv'):
+        got = pd.read_csv(tmp_path / name)
+        want = pd.read_csv(GOLDEN / name)
+        pd.testing.assert_frame_equal(got, want, check_exact=False, rtol=0, atol=0.011)
 
 
 def test_load_universe_filters_and_limits():
@@ -33,5 +36,4 @@ def test_load_universe_filters_and_limits():
     assert len(df) == 5 and set(df['exchange']) <= {'SIX Swiss', 'Vienna (ATX)'}
 
 
-EXPECTED_DIGESTS = {'darvas_buffett_scan.csv': '6ee2d7326e3e9c9f',
-                    'piotroski_scan.csv': '4660614f7571f00a'}
+GOLDEN = Path(__file__).parent / 'golden'
