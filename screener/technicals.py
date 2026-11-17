@@ -115,7 +115,7 @@ def compute_technicals(
     # EMAs
     ema20  = round(float(closes.ewm(span=20,  adjust=False).mean().iloc[-1]), 2)
     ema50  = round(float(closes.ewm(span=50,  adjust=False).mean().iloc[-1]), 2)
-    ema200 = round(float(closes.ewm(span=200, adjust=False).mean().iloc[-1]), 2) if n >= 50 else None
+    ema200 = round(float(closes.ewm(span=200, adjust=False).mean().iloc[-1]), 2) if n >= 200 else None
 
     # MACD (12/26/9)
     macd_val = macd_sig = None

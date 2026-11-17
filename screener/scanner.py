@@ -71,7 +71,8 @@ def _r(v) -> float | None:
 
 
 def _b(v) -> bool | None:
-    if v is None:
+    # _vcrit leaves unavailable criteria as NaN; bool(NaN) is True, so treat NaN as unknown.
+    if v is None or (isinstance(v, float) and math.isnan(v)):
         return None
     try:
         return bool(v)

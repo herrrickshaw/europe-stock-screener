@@ -120,7 +120,9 @@ def fetch_fundamentals(ticker: str) -> dict:
             'roe':            _pct(info.get('returnOnEquity')),
             'opm':            _pct(info.get('operatingMargins')),
             'market_cap':     round(mc / 1e6, 2) if mc else None,
-            'debt_to_equity': _safe_float(info.get('debtToEquity')),
+            # Yahoo reports debtToEquity in percent (45.2 = 0.452x); the scanner tests a ratio.
+            'debt_to_equity': (lambda de: round(de / 100, 4) if de is not None else None)(
+                _safe_float(info.get('debtToEquity'))),
             'beta':           _safe_float(info.get('beta')),
             'current_ratio':  _safe_float(info.get('currentRatio')),
             'revenue_growth': _pct(info.get('revenueGrowth')),
